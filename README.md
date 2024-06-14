@@ -15,6 +15,8 @@ Con un headerinterceptor:
             )
             
 
+Para darle un marco redondeado a la imágen obtenida del servicio, se hace uso de la clase: PicassoCircleTransformation la cual utiliza la librería PICASSO declarada en las dependencias del gradle app.
+
 LOGIN:
 
 ![image](https://github.com/aportillo16/Reto4/assets/166572036/b98cbb9e-b06f-4d08-b4dc-33d7b2a16992)
