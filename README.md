@@ -6,13 +6,16 @@ DESCRIPCIÓN TÉCNICA: Se hace uso de la librería RETROFIT para la validación 
 
 Se utiliza un servicio tipo POST:
 
-@POST("accesos_dev/api/Auth/")
-    fun getResultLogin(@Body parametersDto: ParametersDto): Call<balamKnightsResponse>
+    private var BaseURL_Post = "http://www.balam-knights.com/"
+    
+    @POST("accesos_dev/api/Auth/")
+        fun getResultLogin(@Body parametersDto: ParametersDto): Call<balamKnightsResponse>
 
 Con un headerinterceptor:
-.addHeader(
-                "x-api-key","81818BBF-C772-411D-9BFA-3CAFA12D6077"
-            )
+    
+    .addHeader(
+        "x-api-key","81818BBF-C772-411D-9BFA-3CAFA12D6077"
+    )
             
 
 Para darle un marco redondeado a la imágen obtenida del servicio, se hace uso de la clase: PicassoCircleTransformation la cual utiliza la librería PICASSO declarada en las dependencias del gradle app.
